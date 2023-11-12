@@ -1,0 +1,676 @@
+body {
+    font-family: 'Montserrat';
+    background: #302C42;
+    overflow-x: hidden;
+
+}
+
+#header {
+    padding-top: 50px;
+    padding-bottom: 67px;
+    position: relative;
+    z-index: 3;
+}
+
+
+.container {
+    max-width: 1290px;
+    margin: 0 auto;
+}
+
+.header-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.nav-list {
+    display: flex;
+    gap: 42px;
+}
+
+.nav-link a {
+    color: #FFF;
+    font-size: 12px;
+    font-weight: 700;
+    position: relative;
+}
+
+.mobile-nav-button {
+    display: none;
+}
+
+.header-logo-main-mobile {
+    display: none;
+}
+
+.nav-link a:after {
+    display: block;
+	position: absolute;
+	left: 0; /*изменить на right:0;, чтобы изменить направление подчёркивания */
+	width: 0;/*задаём длинну линии до наведения курсора*/
+	height: 2px; /*задаём ширину линии*/
+	background: linear-gradient(90deg, #8176AF 0%, #C0B7E8 100%);
+	content: "";
+	transition: width 0.3s ease-out; /*задаём время анимации*/
+}
+.nav-link a:hover:after,
+.nav-link a:focus:after {
+	width: 100%; /*устанавливаем значение 100% чтобы ссылка подчёркивалась полностью*/
+}
+
+.banner-row-mobile {
+    display: none;
+}
+
+
+.header-buttons {
+    display: flex;
+    gap: 38px;
+}
+
+.mobile-nav-logo {
+    display: none;
+}
+
+.btn {
+    display: inline-block;
+    padding: 17px 38px 16px 34px;
+    border-radius: 40px;
+    color: #343045;
+    font-size: 12px;
+    font-weight: 700;
+    background: linear-gradient(90deg, #8176AF 0%, #C0B7E8 100%);
+}
+
+.btn-header {
+    color: #fff;
+    background: inherit;
+    border: 2px solid #fff;
+}
+
+.banner-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    padding-bottom: 88px;
+}
+
+.banner-info {
+    max-width: 456px;
+}
+
+.title_span {
+    font-size: 46px;
+    font-weight: 700;
+    background: linear-gradient(92deg, #C0B7E8 -1.02%, #8176AF 36.25%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.about-row-mobile {
+    display: none;
+}
+
+#banner {
+    padding-bottom: 90px;
+}
+
+.banner-title {
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding-bottom: 36px;
+}
+
+.banner-text {
+    color: rgb(255, 255, 255, 80%) ;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-bottom: 66px;
+}
+
+.banner-buttons {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+}
+
+.banner-btn {
+  padding: 17px 43px 16px 38px;
+}
+
+
+.banner-photo img {
+    border-radius: 100px 100px 100px 240px;
+    background: #A3A3A3;
+}
+
+.banner-photo {
+    display: inline-block;
+    position: relative;
+    padding: 15px;
+    border-radius: 100px 100px 100px 240px;
+    background: rgba(0, 0, 0, 0.13);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    z-index: 1;
+}
+
+.vectors {
+    position: absolute;
+    top: -200px;
+    left: 0px;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.banner-nav-row {
+    display: flex;
+    padding: 30px;
+    border-radius: 90px;
+    background: radial-gradient(2900.76% 50.13% at 50% 53.89%, rgba(58, 52, 86, 0.95) 0%, #211E2E 100%);
+    box-shadow: 0px 4px 4px 0px rgba(192, 183, 232, 0.01);
+}
+
+.ite {
+    margin-right: 10px;
+}
+
+.flex_title {
+    margin-bottom: 10px;
+}
+
+.flex-item {
+    display: flex;
+    align-items: center;
+}
+
+.first-item {
+    margin-right: 20px;
+}
+
+.flex-item_last {
+    display: flex;
+    align-items: center;
+}
+
+.flex_title {
+    color: #FFF;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.flex_subtitle {
+  color: rgb(255, 255, 255, 80%) ;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+
+.flex-item::after {
+    content: '';
+    margin-left: 60px;
+    margin-right: 60px;
+    border-right: 1px rgba(192, 183, 232, 0.33) solid;
+    height: 116.5px;
+}
+
+#introduction {
+    padding-bottom: 100px;
+}
+
+
+.introduction-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.introduction-row-mobile {
+    display: none;
+}
+
+.introduction-title {
+    color: #FFF;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.introduction-info-row {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.introduction-subtitle {
+    color: #FFF;
+    font-size: 36px;
+    font-weight: 300;
+}
+
+.introduction-main-text {
+    max-width: 652px;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+
+#about {
+    padding-bottom: 111px;
+}
+
+.about-row {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-logo-main {
+    border-radius: 240px 100px;
+    background: #A3A3A3;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+
+.about-row-vector-first {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.about-row-vector-second {
+    position: absolute;
+    top: 300px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.about-info {
+    max-width: 630px;
+}
+
+.about-title {
+    color: #FFF;
+    font-size: 36px;
+    font-weight: 700;
+    margin-top: 55px;
+
+}
+.about-subtitle {
+    color: rgba(255, 255, 255, 0.70);
+    font-size: 36px;
+    font-weight: 300;
+    margin-bottom: 42px;
+}
+
+.about-text {
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 28px;
+}
+
+.about-btn {
+    color: #343045;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+#why-hydra {
+    padding-bottom: 125px;
+}
+
+#services {
+    padding-bottom: 111px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 11px;
+}
+
+.grid-item {
+    padding: 32px 52px 32px 54px;
+    max-width: 330px;
+    border-radius: 40px;
+    background: radial-gradient(50% 50% at 50% 50%, #433D60 0%, #211E2E 100%);
+}
+
+.grid-item:hover {
+    background: radial-gradient(50% 50% at 50% 50%, #433D60 0%, #26233b 100%);
+}
+
+.grid-item-icon {
+    padding-bottom: 21px;
+}
+
+.grid-item-icon img {
+    background-color: rgba(14, 14, 14, 0.32);
+    border-radius: 50%;
+    padding: 15px;
+}
+
+
+.grid-item-title {
+    text-align: center;
+    color: #FFF;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.grid-item-text {
+    padding-top: 21px;
+    color: #FFF;
+    font-size: 12px;
+    font-weight: 400;
+    margin-left: 10px;
+    padding-bottom: 35px;
+}
+
+.grid-item-title::after {
+    content: '';
+    margin: 0 auto;
+    display: block;
+    border-bottom: 1px solid rgba(192, 183, 232, 0.33);
+    padding-bottom: 17.5px;
+    width: 154px;
+}
+
+.grid-item-btn {
+    margin-left: 30px;
+    display: inline-block;
+    padding: 17px 38px 16px 34px;
+    border-radius: 40px;
+    color: #343045;
+    font-size: 12px;
+    font-weight: 700;
+    background: linear-gradient(90deg, #8176AF 0%, #C0B7E8 100%);
+}
+
+.btn:hover {
+    transition: .4s ease;
+    padding: 23px 55px 23px 50px;
+    background: linear-gradient(90deg, #7d749b 0%, #cec7ee 100%);
+}
+
+.btn-header:hover {
+    background: #5c5774;
+}
+
+.main-banner {
+    background: url(/img/background-two.png);
+    width: 1278px;
+    height: 303px;
+    border-radius: 160px;
+    box-shadow: 0px 4px 4px 0px rgba(192, 183, 232, 0.01);
+}
+
+
+.second-banner-title {
+    padding-top: 141px;
+    color: #FFF;
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.second-banner-subtitle {
+    color: #FFF;
+    font-size: 36px;
+    font-weight: 300;
+    text-align: center;
+}
+
+#company-logos {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.company-logos-row {
+    display: flex;
+    align-items: center;
+    gap: 91px;
+}
+
+
+
+.services-content {
+    position: relative;
+}
+
+.grid-vector {
+    position: absolute;
+    z-index: -1;
+    top: 100px;
+    right: 0px;
+    bottom: 0;
+    left: 100px;
+    
+}
+
+#second-banner {
+    position: relative;
+    z-index: 3;
+}
+
+#about-us-numbers {
+    padding-top: 111px;
+}
+
+.numbers-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.number {
+    display: inline-block;
+    background: rgba(13, 13, 13, 0.32);
+    border-radius: 50%;
+    padding: 20px;
+    margin-left: 40px;
+}
+
+
+.number-content {
+    display: inline-block;
+    padding: 41px 46px 40px 44px;
+    border-radius: 50%;
+    color: #343045;
+    font-size: 64px;
+    font-weight: 700;
+    background: linear-gradient(251deg, #C0B7E8 12.87%, #8176AF 89.33%);;
+}
+
+.number-inner-row {
+    padding-top: 25px;
+    display: flex;
+    align-items: center;
+    max-width: 270px;
+}
+
+.number-text {
+    color: #FFF;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+
+.last_row {
+    margin-left: 35px;
+}
+
+.about-us-numbers-content {
+    position: relative;
+    z-index: 1;
+}
+.numbers-vector {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+@media (max-width:789px) {
+    .header-nav {
+        display: none;
+    }
+    .header-buttons {
+        display: none;
+    }
+    .mobile-nav-button {
+        display: block;
+        margin-right: 20px;
+    }
+    .mobile-nav-logo {
+        display: block;
+    }
+    
+    .header-logo-texts {
+        display: none;
+    }
+    .header-logo-pc {
+        display: none;
+    }
+    
+    .header-logo-main-mobile {
+        display: block;
+        margin-left: 20px;
+    }
+    
+    .banner-row {
+        display: none;
+    }
+
+    .banner-nav-row {
+        display: none;
+    }
+    .banner-row-mobile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .mobile-banner-logo-img {
+        display: inline-block;
+        border-radius: 100px 100px 100px 240px;
+           background: #A3A3A3;
+         box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    }
+
+    .banner-mobile-photo-background {
+        display: inline-block;
+        border-radius: 100px 100px 100px 240px;
+        background: rgba(0, 0, 0, 0.13);
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        padding: 15px;
+
+    }
+
+    .banner-title-mobile {
+        color: #FFF;
+        font-size: 24px;
+        font-weight: 700;
+        text-align: center;
+    }
+
+    .mobile_span {
+        text-align: center;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    .mobile-buttons {
+        margin-left: 10px;
+    }
+
+    .banner-btn-mobile {
+        padding: 17px 69px;
+        font-size: 14px;
+    }
+
+    .introduction-row {
+        display: none;
+    }
+    .introduction-row-mobile {
+       display: flex;
+       text-align: center;
+       flex-direction: column;
+       align-items: center;
+       gap: 16px;
+    }
+
+    .about-row {
+        display: none;
+    }
+
+    .about-row-mobile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 51px;
+        text-align: center;
+    }
+
+    .about-text-mobile {
+        max-width: 352px;
+        font-size: 12px;
+    }
+
+    .about-btn-mobile {
+        padding: 20px 63px;
+    }
+
+
+    .about-logo-main {
+        border-radius: 140px 60px;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    }
+
+    #why-hydra {
+        display: none;
+    }
+    #services {
+        display: none;
+    }
+    #technologies {
+        display: none;
+    }
+    #company-logos {
+        display: none;
+    }
+
+    #howto {
+        display: none;
+    }
+    #about-us-numbers {
+        display: none;
+    }
+
+}
